@@ -1,16 +1,17 @@
 import Link from "next/link"
+
 import {
-  Heart,
-  Leaf,
-  ClipboardCheck,
   ArrowRight,
   Baby,
+  ClipboardCheck,
+  Flower2,
+  Heart,
+  Leaf,
   Salad,
   Scale,
-  Flower2,
 } from "lucide-react"
 
-import { PageShell, FinalCta } from "@/components/page-shell"
+import { FinalCta, PageShell } from "@/components/page-shell"
 
 const services = [
   [
@@ -58,7 +59,9 @@ export default function Home() {
         {/* Hero section */}
         <section className="hero">
           <div className="hero-copy">
-            <p className="eyebrow">Evidence · Empathy · Empowerment</p>
+            <p className="eyebrow">
+              Evidence · Empathy · Empowerment
+            </p>
 
             <h1>
               Nutrition that fits <em>your life.</em>
@@ -92,14 +95,14 @@ export default function Home() {
             <img
               className="hero-photo"
               src="/images/prajakta-about-photo.png"
-              alt="Indian clinical nutritionist writing beside a balanced meal"
+              alt="Prajakta, Clinical Nutritionist and Dietitian"
             />
 
             <p>PCOS · Postpartum · Women’s Health</p>
           </div>
         </section>
 
-        {/* Values */}
+        {/* Values section */}
         <section className="values">
           {[
             [Leaf, "Personalised", "Your body and routine are unique."],
@@ -109,7 +112,11 @@ export default function Home() {
               "Your health deserves informed guidance.",
             ],
             [Salad, "Practical", "Nutrition should work in real life."],
-            [Heart, "Sustainable", "Small changes can create lasting impact."],
+            [
+              Heart,
+              "Sustainable",
+              "Small changes can create lasting impact.",
+            ],
           ].map(([Icon, title, description]: any) => (
             <article key={title}>
               <Icon />
@@ -122,7 +129,7 @@ export default function Home() {
           ))}
         </section>
 
-        {/* About preview */}
+        {/* About section */}
         <section className="about-preview">
           <div className="editorial-image">
             <img
@@ -158,7 +165,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Moving services slider */}
+        {/* Moving services section */}
         <section className="services-section">
           <p className="script center">what I help with</p>
 
@@ -195,7 +202,7 @@ export default function Home() {
           </Link>
         </section>
 
-        {/* Postpartum feature */}
+        {/* Postpartum section */}
         <section className="postpartum-feature">
           <img
             src="/images/postpartum-mother-baby.png"
@@ -205,14 +212,19 @@ export default function Home() {
           <div>
             <p className="script">postpartum support</p>
 
-            <h2>Nourishment for the season that asks so much of you.</h2>
+            <h2>
+              Nourishment for the season that asks so much of you.
+            </h2>
 
             <p>
               Gentle, practical support for recovery, energy and new
               motherhood—without pressure or perfection.
             </p>
 
-            <Link href="/services/postpartum-nutrition" className="btn">
+            <Link
+              href="/services/postpartum-nutrition"
+              className="btn"
+            >
               Explore postpartum nutrition
             </Link>
           </div>
@@ -226,14 +238,19 @@ export default function Home() {
             You need a way of eating that works for <em>you.</em>
           </h2>
 
-          <Link href="/book-consultation" className="btn btn-light">
+          <Link
+            href="/book-consultation"
+            className="btn btn-light"
+          >
             Start your journey
           </Link>
         </section>
 
-        {/* Process */}
+        {/* Process section */}
         <section className="process">
-          <p className="eyebrow">Simple, supportive, personal</p>
+          <p className="eyebrow">
+            Simple, supportive, personal
+          </p>
 
           <h2>How it works</h2>
 
