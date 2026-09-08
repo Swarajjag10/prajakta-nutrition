@@ -91,7 +91,7 @@ export default function Home() {
 
             <img
               className="hero-photo"
-              src="/images/prajakta-about-photo.PNG"
+              src="/images/prajakta-about-photo.png.PNG"
               alt="Indian clinical nutritionist writing beside a balanced meal"
             />
 
